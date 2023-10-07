@@ -35,10 +35,12 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+  height: 100vh;
 }
 
 .page {
-  width: 36rem;
+  width: 100%;
+  max-width: 58.8rem;
   margin: 5.6rem auto 3.2rem;
 }
 
@@ -179,4 +181,14 @@ span {
   background-color: var(--list-color);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
+}
+
+@media (min-width: 700px) {
+  :root {
+    --imagem: url(imagens/bg-desktop.jpg);
+  }
+
+  .light {
+    --imagem: url(imagens/bg-desktop-light.jpg);
+  }
 }
