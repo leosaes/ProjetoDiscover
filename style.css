@@ -164,9 +164,8 @@ button {
   transform: translateY(-50%);
 }
 
-.light #botao button {
-  right: -5%;
-  left: initial;
+#botao button:hover {
+  outline: 8px solid var(--social-hover);
 }
 
 span {
@@ -190,5 +189,31 @@ span {
 
   .light {
     --imagem: url(imagens/bg-desktop-light.jpg);
+  }
+}
+
+.light #botao button {
+  animation: switching 0.4s forwards;  
+}
+
+@keyframes switching {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+#botao button {
+  animation: switch-back 0.4s;
+}
+
+@keyframes switch-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }
