@@ -63,7 +63,11 @@ main {
 
 #profile img {
   width: 11rem;
+  height: 11rem;
+  object-fit: cover;
+  
   margin-bottom: 0.8rem;
+  border-radius: 100%;
 }
 
 #profile p {
@@ -159,7 +163,7 @@ button {
 
   position: absolute;
   z-index: 1;
-  left: 0;
+  right: 0;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -198,10 +202,10 @@ span {
 
 @keyframes switching {
   from {
-    left: 0;
+    right: 0;
   }
   to {
-    left: 50%;
+    right: 50%;
   }
 }
 
@@ -211,9 +215,9 @@ span {
 
 @keyframes switch-back {
   from {
-    left: 50%;
+    right: 50%;
   }
   to {
-    left: 0;
+    right: 0;
   }
 }
